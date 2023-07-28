@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;    
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+li {
+    list-style: none;
+    color: red;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'Kdam Thmor Pro', sans sans-serif;
+}
+
+li:hover {
+    color: #fff;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+}
+
+
+.container-content {
+    width: 90%;
+    margin-top: 50px;
+}
+
+.card-content-bg{
+    margin: 50px;
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+    row-gap: 20px;
+    column-gap: 40px;
+
+}
+
+.card {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: #fff;
+    font-size: 17px;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+.banner-4 {
+    background-image: url('https://wallpapers.com/images/hd/leon-resident-evil-2-a9zzaps0seco62ut.jpg');
+}
+.banner-5 {
+    background-image: url('https://cdnb.artstation.com/p/assets/images/images/016/166/003/large/mx-bedlam-helpme01.jpg?1551163602');
+}
+.banner-6 {
+    background-image: url('https://d.newsweek.com/en/full/1303650/resident-evil-2-remake-claire.jpg?w=1600&h=1200&q=88&f=fbccd74114d077028d62e16ea14676b8');
+}
+.banner-7 {
+    background-image: url('https://cdn.vox-cdn.com/thumbor/roOHGFx1FblFZqvSFtfPcmZrI2E=/0x0:1920x1080/1200x800/filters:focal(807x387:1113x693)/cdn.vox-cdn.com/uploads/chorus_image/image/62928771/RE2_182.0.jpg');
+}
+.banner-8 {
+    background-image: url('https://3.bp.blogspot.com/-v-V2LyDaLVo/XGrTXPSKs1I/AAAAAAAAEhg/XI6komnucqss-opTcGbk8vHUp6-1gkGrwCK4BGAYYCw/s1600/resident_evil_2_licker_render1.jpg');
+}
+.banner-9 {
+    background-image: url('https://static.wikia.nocookie.net/residentevil/images/7/7e/RE2R_Welcome_to_the_City_of_the_Dead.jpg/revision/latest?cb=20191224135505');
+}
+
+footer {
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span {
+    color: #fff;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.footer-navigation {
+    display: none;   
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width: 768px){
+    .footer-navigation {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+}
